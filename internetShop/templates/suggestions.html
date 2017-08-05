@@ -1,0 +1,13 @@
+<div class="sugges">
+<h1>Відгуки і пропозиції</h1>
+<h4>Тільки зареєстровані користувачі можуть залишати відгуки!</h4>
+ <form action="">
+    <textarea class="form-control txt" rows="3" placeholder="Ваші відгуки і пропозиції" ng-model='sugges.txtSugg'></textarea>
+    <input type="button" value="Відправити"  class="btn btn-success" ng-click='sugges.sendSugg()'>  
+</form>
+       <div class="suggesRepeat" ng-repeat='key in sugges.sugges'>
+           <span>{{key.name}}</span>
+           <p>{{key.text}}</p>
+           <br>
+       </div>
+</div>

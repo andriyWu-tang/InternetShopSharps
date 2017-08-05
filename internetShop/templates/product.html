@@ -1,0 +1,39 @@
+<div class="container" style="color:white;min-height:500px;">
+	<div class="row">
+		
+        
+        <div class="col-md-12">
+        <h4>Таблиця товару</h4>
+                   
+        <div class="table-responsive">
+              <table id="mytable" class="table table-bordred table-striped">
+                
+                   <thead>
+                   <tr>
+                   <th>Фото</th>
+                    <th>Товар</th>
+                     <th>Ціна</th>
+                     <th>Кі-сть</th>
+                       <th>Видалити</th>
+                       </tr>
+                   </thead>
+    <tbody>
+<!--    <img src="/images/logo.jpg" alt="">-->
+    <tr ng-repeat='product in prod.chartProducts' style="color:black;background-color:#0DBAFF;">
+    <td><img src="{{product.photo}}" alt="" style="width:100px;height:100px;"></td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}$</td>
+    <td><input type="number" style="width:50px;" ng-model="product.countProd" ng-change='prod.changeCount()'></td>
+
+    <td width="50"><button class="btn btn-danger btn-xs" ng-click='prod.removeProduct(product.id)'><span class="glyphicon glyphicon-trash"></span></button></td>
+    </tr>
+    </tbody>      
+</table>
+          <p>Сумма: {{prod.totalPrice.price}}</p>
+           <button class="btn btn-info" ng-click='prod.goToView()'>Продовжити покупки</button>
+           <button class="btn btn-danger" ng-click='prod.goToContact()'>Купити</button>
+           <button class="btn btn-primary" ng-click='prod.clearChart()'>Очистити кошик</button>
+            </div>
+        </div>
+        </div>
+    </div>

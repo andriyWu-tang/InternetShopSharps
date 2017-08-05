@@ -1,0 +1,9 @@
+<div class="viewProduct">
+    <img src="{{view.currentProduct.photo}}" alt="" style="width:75%;height:100%;">
+    <div class="viewProduct_left">
+    <h2>{{view.currentProduct.name}}</h2>
+    <h4>{{view.currentProduct.price}}$</h4>
+    <p>{{view.currentProduct.about}}</p>
+    <button class="btn btn-danger" ng-click='view.addToChart(view.currentProduct.id)'>додати у кошик</button>
+    </div>
+</div>

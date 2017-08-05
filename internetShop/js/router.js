@@ -1,0 +1,43 @@
+app.config(function($routeProvider){
+    
+    
+    $routeProvider
+    .when('/home',{
+        templateUrl:'templates/home.html',
+         controller:'firstCtrl',
+        controllerAs:'first'
+    })
+    .when('/contact',{
+        templateUrl:'templates/contact.html',
+        controller:'contactCtrl',
+        controllerAs:'cont'
+    })
+    .when('/contactUs',{
+        templateUrl:'templates/contactUs.html',
+        controller:'contactUsCtrl',
+        controllerAs:'contUs'
+    })
+     .when('/sugges',{
+        templateUrl:'templates/suggestions.html',
+        controller:'suggesCtrl',
+        controllerAs:'sugges'
+    })
+    .when('/shop',{
+        templateUrl:'templates/shop.html',
+         controller:'shopCtrl',
+        controllerAs:'shop'
+    })
+    .when('/product',{
+        templateUrl:'templates/product.html',
+         controller:'productCtrl',
+        controllerAs:'prod'
+    })
+     .when('/view',{
+        templateUrl:'templates/view.html',
+         controller:'viewCtrl',
+        controllerAs:'view'
+    })
+    .otherwise({
+        redirectTo:'/home'
+    })
+})

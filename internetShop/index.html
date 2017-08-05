@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body ng-app='App' ng-controller='homeCtrl as home'>
+   
+    <header my-header count='home.headerProducts.length'>   
+     
+   </header>
+    
+   
+    <ng-view></ng-view>
+    
+    <footer my-footer>    </footer>
+    
+    
+    <script src="js/app.js"></script>
+    <script src="js/app-controller.js"></script>
+    <script src="js/router.js"></script>
+    
+    <script src="js/services/userService.js"></script>
+    
+    <script src="js/controllers/header.js"></script>
+    <script src="js/controllers/footer.js"></script>
+    <script src="js/controllers/modalDir.js"></script>
+    
+    <script src="js/controllers/myCtrl.js"></script>
+    
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/contact.js"></script>
+    <script src="js/controllers/shop.js"></script>
+    <script src="js/controllers/product.js"></script>
+    <script src="js/controllers/view.js"></script>
+    <script src="js/filters/category.filter.js"></script>
+    <script src="js/controllers/contactUs.js"></script>
+    <script src="js/controllers/suggestions.js"></script>
+
+</body>
+</html>

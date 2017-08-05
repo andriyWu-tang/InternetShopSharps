@@ -1,0 +1,52 @@
+<div class="contactUs">
+<div class="contactLeft">
+<h3>Кількість товарів у кошику: {{cont.chartProducts.length}}</h3>
+<h3>Сумма: {{cont.totalPrice.price}}$</h3>
+
+
+<div class="table-responsive">
+              <table class="table table-bordred table-striped" style="width:80%;">
+                
+                   <thead>
+                   <tr>
+                    <th>Фото</th>
+                     <th>Товар</th>
+                     <th>Ціна</th>
+                       <th>Кі-сть</th>
+                       </tr>
+                   </thead>
+    <tbody>
+    
+    <tr ng-repeat='product in cont.chartProducts' style="color:#000000;background-color:#0DBAFF;">
+    <td><img src="{{product.photo}}" alt="" style="width:50px;height:50px;"></td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}$</td>
+    <td width="60">{{product.countProd}}</td>
+    </tr>
+    </tbody>      
+</table>
+          
+            </div>
+            </div>
+<div class="clearfix">
+<form class="formContact"> 
+ <div class="form-group"> 
+     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model='cont.email'>  
+     </div>  
+     <div class="form-group">   
+      <input type="text" class="form-control" placeholder="Імя" ng-model='cont.name'> 
+       </div> 
+       <div class="form-group">   
+      <input type="text" class="form-control" placeholder="Прізвище" ng-model='cont.sname'> 
+       </div> 
+        <div class="form-group">  
+          <input type="text" class="form-control" placeholder="Номер телефону" ng-model='cont.phone'> 
+           </div> 
+            <textarea class="form-control" rows="3" placeholder="Повідомлення" ng-model='cont.message'></textarea> 
+             <br> 
+              <input type="button" class="btn btn-danger" value="Відправити" ng-click='cont.send()'> 
+               </form> 
+
+    </div>
+</div>
+ <h1 style="text-align:center;">Дякуємо за покупку!</h1>
